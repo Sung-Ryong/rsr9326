@@ -1,0 +1,81 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <TableRow>
+         <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_event"
+            android:layout_gravity="left"
+            />
+        
+        
+    </TableRow>
+       
+    <TableRow>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff00"
+            
+            >
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사진"            
+            >            
+        </Button>
+        
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음악"            
+            >            
+        </Button>
+        
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비디오"            
+            >            
+        </Button>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처"            
+            >            
+        </Button>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앱"            
+            >            
+        </Button>
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파일, 폴더"            
+            >            
+        </Button>
+        
+        </LinearLayout>
+        
+    </TableRow>
+        
+        
+        
+        
+        
+    
+    
+</TableLayout>
