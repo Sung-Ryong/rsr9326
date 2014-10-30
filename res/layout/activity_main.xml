@@ -2,8 +2,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-    
+
     <TableRow>
+        <LinearLayout>
          <ImageView
             android:id="@+id/ImageView1"
             android:layout_width="wrap_content"
@@ -11,18 +12,41 @@
             android:src="@drawable/ic_action_event"
             android:layout_gravity="left"
             />
+         <TextView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="내 저장소 여유 공간"
+             android:textSize="10pt"
+             android:background="#ffff00"
+             />
+         </LinearLayout>
         
         
     </TableRow>
        
     <TableRow>
+        <HorizontalScrollView
+            android:id="@+id/horizontalview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+        
         <LinearLayout
+            android:id="@+id/linearlayout1"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ffff00"
             
             >
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비디오" />
+
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
@@ -36,14 +60,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="음악"            
-            >            
-        </Button>
-        
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="비디오"            
             >            
         </Button>
         <Button
@@ -69,13 +85,23 @@
         </Button>
         
         </LinearLayout>
-        
+        </HorizontalScrollView>       
     </TableRow>
-        
-        
-        
-        
-        
-    
-    
+		<LinearLayout
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:orientation="vertical"
+	    	android:layout_gravity="center"
+	   >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여기에 파일 목록 나옵니다."
+            
+            />
+       
+		</LinearLayout>
+		
+
+
 </TableLayout>
